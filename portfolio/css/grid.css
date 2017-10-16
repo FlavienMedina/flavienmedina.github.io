@@ -1,0 +1,103 @@
+.grid-item {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background: white;
+    color: #444;
+    text-align: center;
+}
+
+@media screen and (max-width:768px) {
+    .grid-item {
+        grid-template-columns: 100%;
+    }
+    .item .infos {
+        font-size: 5vw;
+    }
+    div#menu {
+        cursor: pointer;
+        font-size: 35px;
+        text-align: center;
+        float: right;
+        margin-top: -10px;
+        color: black;
+        display: inherit;
+    }
+    header nav {
+        padding-bottom: 20px;
+    }
+    ul#nav {
+        height: 13vh;
+        margin: auto;
+        text-align: center;
+        margin-top: 10vh;
+        float: none;
+        transition: all 500ms;
+        width: 100%;
+        display: inherit;
+    }
+    #nav li {
+        padding: 0;
+        display: inherit;
+        margin-bottom: 20px;
+    }
+    #nav.hide_menu {
+        height: 0;
+        overflow: hidden;
+    }
+    div #contact textarea {
+        padding: 17px;
+        padding-right: 0;
+    }
+    div .grid-contact {
+        grid-template-columns: 100%;
+    }
+    div #contact>form>.grid-contact>#inputs input:last-child {
+        margin-bottom: 10px;
+    }
+    #footer>div {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    #footer>div span, ul {
+        margin-bottom: 15px;
+    }
+    footer>div ul:last-child {
+        margin-left: 0px;
+    }
+    .links>li {
+        display: block;
+        margin-bottom: 5px;
+        border: none;
+        background-color: #222;
+        font-weight: bold;
+        font-size: 20px;
+        padding: 15px 40px;
+        margin-bottom: 15px;
+        text-shadow: 1px 1px 5px black;
+        cursor: pointer;
+        margin-right: auto;
+        margin-left: auto;
+    }
+     #footer>div>ul>li a {
+        color: white;
+        font-weight: bold;
+    }
+    .links>.tiret {
+        display: none;
+    }
+    ul.icons>li a {
+        width: 70px;
+        font-size: 30px;
+        line-height: 70px;
+    }
+}
+
+.grid-contact {
+    display: grid;
+    grid-template-columns: 47% 5% 46%;
+}
+
+footer>div {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}

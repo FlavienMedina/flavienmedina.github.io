@@ -1,0 +1,197 @@
+header>.grille-12 {
+  color: white;
+  transition: all 1s;
+  padding: 0;
+  float:none;
+  height:50vw;
+}
+.bg{
+  background: url('../img/ubuntu-bg2.jpg');
+  background-size: contain;
+}
+.contact{
+  height: 100vh;
+}
+nav {
+    transition: all 1s;
+    padding-bottom: 50px;
+    padding: 30px 50px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+ul {
+  width:100%;
+}
+
+li {
+  float:left;
+}
+li a {
+  display: block;
+  width:80%;
+  padding:4% 10%;
+  font-size:1.35em;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    background-color: #222;
+    padding-top: 2%;
+    padding-right: 2%;
+    padding-left: 0;
+    padding-bottom: 1%;
+  }
+  .nav-left{
+    padding-left: 2%;
+  }
+  #nav{
+    height: 14vh;
+    transition: all 500ms;
+    overflow: hidden;
+  }
+  #nav.hide_menu{
+    height: 0vh;
+}
+  #nav>li>a {
+    width: 20%;
+    margin: 0 auto;
+    line-height: 0;
+    padding: 0;
+    padding-top: 7%;
+  }
+  #menu {
+    cursor: pointer;
+    font-size: 35px;
+    text-align: center;
+    float: right;
+    margin-top: -10px;
+  }
+  nav>.nav-right{
+    float: none;
+  }
+  #nav>li {
+    text-align: center;
+    float: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  #menu {
+    display: none;
+  }
+}
+.nav_scroll{
+  background-color: #8e2a4e;
+  padding: 20px 50px;
+  transition: padding .3s;
+}
+.nav-left {
+    float: left;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+.nav-right {
+    float: right;
+}
+nav li {
+    display: initial;
+}
+nav li>a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 1px;
+    padding-right: 25px;
+    line-height: 2;
+    color: white;
+}
+nav li>a:hover {
+    color: #17a57d;
+}
+
+.text-center {
+    text-align: -webkit-center;
+    position: absolute;
+    right: 0;
+    left: 0;
+    font-size: 40px;
+    padding: 15vw 0;
+    text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+  .text-center {
+    font-size: 22px;
+  }
+  div.text-center>h3 {
+      font-size: 20px;
+      padding-bottom: 5px;
+  }
+  .text-center>h1 {
+      padding-bottom: 4%;
+  }
+  a.btn {
+    font-size: 18px;
+    padding: 14px 25px;
+}
+}
+.text-center>h3 {
+    font-size: 30px;
+    font-style: italic;
+    font-weight: normal;
+    padding-bottom: 15px;
+    text-transform: none;
+}
+.btn{
+  color: #fff;
+  background-color: #17a57d;
+  border-color: #4dc46f;
+  font-weight: bold;
+  border-radius: 3px;
+  font-size: 18px;
+  padding: 20px 40px;
+  text-decoration: none;
+}
+/*ANIMATION*/
+.part {
+  background: url('../img/ubuntu-bg2.jpg') fixed;
+  background-repeat: no-repeat;
+    background-size: cover;
+  height:50vw ;
+  width:10% ;
+  float: right;
+  transform: rotateY(90deg);
+}
+@media screen and (max-width: 1850px) and (min-height: 723px) {
+  .part {
+background-size: contain;
+  }
+}
+.show_part {
+    visibility: visible;
+    transition: all 2s;
+    transform: rotateY(0deg);
+    animation: rotation 500ms linear;
+}
+@keyframes rotation {
+    0% {
+        transform: rotateY(90deg);
+    }
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+.hide_nav {
+    opacity: 0;
+}
+.visible_nav {
+    opacity: 1;
+}
+.text-center {
+    transform: rotateX(90deg);
+    transition: all 500ms;
+}
+.rotate_text-center {
+    transform: rotateX(0deg)
+}
+/*ANIMATION*/

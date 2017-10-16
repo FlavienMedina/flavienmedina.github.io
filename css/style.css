@@ -1,0 +1,114 @@
+*{font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;box-sizing:border-box;padding:0;margin:0;}
+div[class^=grille]{padding-right:2%;padding-left:2%;vertical-align:top;display:inline-block;}
+.container{font-size:0;margin-left:auto;margin-right:auto;}
+.grille-2{width:16.666%;}
+.grille-3{width:25%;}
+.grille-4{width:33.333333%;}
+.grille-6{width:50%;}
+.grille-12{width:100%;}
+@media screen and (min-width:1200px){body div.container{width:1170px;}
+}
+@media screen and (min-width:992px){div.container{width:970px;}
+}
+@media screen and (min-width:768px){.container{width:750px;}
+}
+@media screen and (max-width:768px){div.grille-4{width:100%;}
+div.grille-6{width:100%;}
+footer div.grille-4{width:100%;}
+}
+@media screen and (max-width:975px){.grille-4{width:50%;}
+.grille-6{width:100%;}
+footer div.grille-4{width:100%;}
+}
+@media only screen and (min-device-width:768px) and (max-device-width:1024px){.grille-4{width:50%;}
+.grille-6{width:100%;}
+footer div.grille-4{width:100%;}
+}
+@media screen and (max-width:1850px) and (min-height:723px){.part-1{background-position:0 top;}
+.part-2{background-position:10% top;}
+.part-3{background-position:20% top;}
+.part-4{background-position:30% top;}
+.part-5{background-position:40% top;}
+.part-6{background-position:50% top;}
+.part-7{background-position:60% top;}
+.part-8{background-position:70% top;}
+.part-9{background-position:80% top;}
+.part-10{background-position:90% top;}
+}
+header>.grille-12{color:white;transition:all 1s;padding:0;margin:0;float:none;height:50vw;}
+.bg{background:url('../img/ubuntu-bg2.jpg');background-size:contain;}
+nav{transition:all 1s;padding-bottom:50px;padding:30px 50px;width:100%;position:fixed;z-index:1;}
+ul{width:100%;}
+header li{float:left;}
+header li a{display:block;width:80%;font-size:1.35em;text-decoration:none;}
+@media screen and (max-width:768px){nav{background-color:#222;padding-top:2%;padding-right:2%;padding-left:0;padding-bottom:1%;}
+.nav-left{padding-left:2%;}
+#nav{height:20vw;transition:all 500ms;overflow:hidden;}
+#nav.hide_menu{height:0vh;}
+#nav>li>a{width:40%;margin:0 auto;line-height:0;padding:0;padding-top:8%;}
+#menu{cursor:pointer;font-size:35px;text-align:center;float:right;margin-top:-10px;}
+nav>.nav-right{float:none;}
+#nav>li{text-align:center;float:none;}
+}
+@media screen and (min-width:768px){#menu{display:none;}
+}
+.nav_scroll{background-color:#8e2a4e;padding:20px 50px;transition:padding .3s;}
+.nav-left{float:left;font-size:25px;letter-spacing:2px;}
+.nav-right{float:right;}
+nav li{display:initial;}
+nav li>a{text-decoration:none;text-transform:uppercase;font-weight:normal;letter-spacing:1px;padding-right:25px;color:white;}
+nav li>a:hover{color:#17a57d;}
+.text-center{text-align:-webkit-center;position:absolute;right:0;left:0;font-size:40px;padding:15vw 0;text-transform:uppercase;}
+.text-center>h1{padding-bottom:4%;}
+@media screen and (max-width:768px){.text-center{font-size:14px;}
+div.text-center>h3{font-size:20px;padding-bottom:5px;}
+.text-center>h1{padding-bottom:4%;}
+header a.btn{font-size:12px;padding:10px 20px;}
+}
+.text-center>h3{font-size:30px;font-style:italic;font-weight:normal;padding-bottom:15px;text-transform:none;}
+.btn{color:#fff;background-color:#17a57d;border-color:#4dc46f;font-weight:bold;border-radius:3px;font-size:18px;padding:20px 40px;text-decoration:none;}
+.part{background:url('../img/ubuntu-bg2.jpg') fixed;background-repeat:no-repeat;background-size:cover;height:50vw;width:10%;float:right;transform:rotateY(90deg);}
+@media screen and (max-width:1850px) and (min-height:723px){.part{background-size:contain;}
+}
+.show_part{visibility:visible;transition:all 2s;transform:rotateY(0deg);animation:rotation 500ms linear;}
+@keyframes rotation{0%{transform:rotateY(90deg);}
+100%{transform:rotateY(0deg);}
+}
+.hide_nav{opacity:0;}
+.visible_nav{opacity:1;}
+.text-center{transform:rotateX(90deg);transition:all 500ms;}
+.rotate_text-center{transform:rotateX(0deg);}
+.portfolio .grille-4{margin-bottom:2%;}
+.portfolio-hover{background:#17a57d;position:absolute;width:100%;height:100%;opacity:0;transition:all ease .5s;}
+.portfolio-hover-content{position:absolute;width:100%;height:20px;font-size:20px;text-align:center;top:40%;margin-top:-12px;color:#fff;}
+.portfolio-link{display:block;position:relative;max-width:400px;margin:0 auto;}
+.portfolio-hover:hover{opacity:1;}
+img{display:block;max-width:100%;height:auto;}
+.text-caption{text-align:center;background-color:#fff;padding:25px;margin-top:-5px;}
+.text-caption h4{font-weight:bold;text-transform:none;font-size:20px;}
+.text-caption p{font-size:16px;}
+.logos{background:white;}
+.logos img{margin:50px auto;}
+#contact{height:auto;background:#222;padding:0 0 30px;}
+div.contact{margin:0 auto;display:block;}
+.contact h2{color:white;}
+.contact textarea{padding:20px;height:auto;margin-bottom:7%;}
+.contact input{padding:16px;height:auto;margin-bottom:4%;}
+.contact .btn{margin-top:2%;}
+input, textarea{display:block;width:100%;font-size:14px;line-height:1.42857143;color:#555;background-color:#fff;border:1px solid #ccc;border-radius:4px;}
+footer{padding:25px 0;text-align:center;}
+footer div[class^=grille]{padding-right:23.391px;padding-left:23.391px;vertical-align:middle;display:inline-block;font-size:14px;font-weight:bold;}
+footer a{color:#17a57d;text-decoration:none;}
+footer a:hover{color:#4dc46f;text-decoration:underline;}
+footer span{line-height:40px;}
+footer li{display:inline-block;padding-right:5px;padding-left:5px;}
+ul.icons li a{display:block;background-color:#222;width:40px;border-radius:100%;font-size:20px;line-height:40px;color:#fff;transition:all .3s;}
+@media screen and (max-width:768px){.link-touch li{margin:40px;display:block;}
+.link-touch a{color:#fff;background-color:#17a57d;border-color:#4dc46f;font-weight:bold;border-radius:3px;font-size:18px;padding:15px 25px;text-decoration:none;}
+.link-touch .tiret{display:none}
+}
+body{background-color:#f7f7f7;}
+.overflow_hidden{overflow:hidden;}
+h2{font-size:40px;text-align:center;color:#333;text-transform:uppercase;padding:2% 0;}
+.text-muted{color:#777;}
+.center{text-align:center;}

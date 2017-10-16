@@ -1,0 +1,20 @@
+#mid{
+  padding:0 20%;
+}
+img {
+    max-width: 100%;
+}
+.text-caption{
+  text-align: center;
+  background-color: #fff;
+  padding: 25px;
+  margin-top:-5px;
+}
+.text-caption h4{
+  font-weight: bold;
+  text-transform: none;
+  font-size: 20px;
+}
+.text-caption p{
+  font-size: 16px;
+}

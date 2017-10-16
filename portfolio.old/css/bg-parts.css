@@ -1,0 +1,31 @@
+@media screen and (max-width: 1850px) and (min-height: 723px) {
+.part-1 {
+    background-position: 0 top;
+}
+.part-2 {
+    background-position: 10% top;
+}
+.part-3 {
+    background-position: 20% top;
+}
+.part-4 {
+    background-position: 30% top;
+}
+.part-5 {
+    background-position: 40% top;
+}
+.part-6 {
+    background-position: 50% top;
+}
+.part-7 {
+    background-position: 60% top;
+}
+.part-8 {
+    background-position: 70% top;
+}
+.part-9 {
+    background-position: 80% top;
+}
+.part-10 {
+    background-position: 90% top;
+}

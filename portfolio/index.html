@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Flavien Medina</title>
+    <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/grid.css" media="screen" title="no title" charset="utf-8">
+</head>
+
+<body>
+    <header class="grid">
+        <nav>
+            <li id="title"><a href="/">Flavien Medina</a></li>
+            <ul id="nav" class="hide_menu">
+                <li><a href="#portfolio">Portfolio</a></li>
+                <!-- <li><a href="#">Parcours</a></li>
+                <li><a href="#">Compétences</a></li> -->
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="center">
+            <div class="content">
+                <h1>Flavien Medina</h1>
+                <h2>Développeur Web & Mobile</h2>
+            </div>
+        </div>
+        <div id="portfolio" class="portfolio grid-item">
+            <div class="item">
+                <img src="img/pole-emploi.png" alt="">
+                <div class="infos">
+                    <span class="info-title">Pole Emploi</span>
+                    <span class="info-tiret">-</span>
+                    <span class="info-lang">Symfony 2</span>
+                </div>
+            </div>
+            <a target="_blank" href="http://medinjob.com">
+                <div class="item">
+                    <img src="img/medinjob.png" alt="">
+                    <div class="infos">
+                        <span class="info-title">Medinjob</span>
+                        <span class="info-tiret">-</span>
+                        <span class="info-lang">Laravel / MySQL</span>
+                    </div>
+                </div>
+            </a>
+            <a target="_blank" href="http://flavien94.github.io/ex-petit-prince/">
+                <div class="item">
+                    <img src="img/petit_prince.png" alt="">
+                    <div class="infos">
+                        <span class="info-title">Le Petit Prince</span>
+                        <span class="info-tiret">-</span>
+                        <span class="info-lang">Twitter Bootstrap</span>
+                    </div>
+                </div>
+            </a>
+            <a target="_blank" href="http://flafla-et-juju.github.io/sonicrun/">
+                <div class="item">
+                    <img src="img/sonic_run.png" alt="">
+                    <div class="infos">
+                        <span class="info-title">Sonic Run</span>
+                        <span class="info-tiret">-</span>
+                        <span class="info-lang">Animation CSS</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div id="contact">
+            <h2>Contact</h2>
+            <form name="contactForm" id="contactForm">
+                <div class="grid-contact">
+                    <div id="inputs">
+                        <input type="text" name="nom" id="nom" placeholder="Nom" required data-validation-required-message="Veuillez entrez votre nom.">
+                        <input type="email" name="email" id="email" placeholder="Email" required data-validation-required-message="Veuillez entrez votre email.">
+                        <input type="tel" name="telephone" id="telephone" placeholder="Téléphone">
+                    </div>
+                    <div id="separator"></div>
+                    <textarea name="message" rows="8" cols="80" id="message" placeholder="Votre message..." required data-validation-required-message="Veuillez entrez votre message."></textarea>
+                </div>
+                <div id="button">
+                    <div id="success"></div>
+                    <button type="submit" class="btn">Envoyer</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer id="footer">
+        <div>
+            <span id="copyright">Copyright © flavien-medina 2017</span>
+            <ul class="icons">
+                <li><a target="_blank" href="https://twitter.com/FlavienMedina"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a target="_blank" href="https://github.com/Flavien94"><i class="fa fa-github"></i></a>
+                </li>
+                <li><a target="_blank" href="https://www.linkedin.com/in/flavienmedina"><i class="fa fa-linkedin"></i></a>
+                </li>
+            </ul>
+            <ul class="links">
+                <li class="text-muted"><a target="_blank" href="assets/FLAVIEN_MEDINA.pdf">Mon CV</a> </li>
+                <li class="tiret">-</li>
+                <script>
+                    var uagent = navigator.userAgent.toLowerCase();
+                    if (uagent.search("iphone") > -1 || uagent.search("android") > -1) {
+                        document.write('<li class="text-muted"><a href="tel:0652448426">Appelez-moi</a></li>');
+                    } else {
+                        document.write('<li class="text-muted"><a>06 52 44 84 26</a></li>');
+                    }
+                </script>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="js/nav_scroll.js" charset="utf-8"></script>
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js" charset="utf-8"></script>
+    <script src="js/burger.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+</body>
+
+</html>

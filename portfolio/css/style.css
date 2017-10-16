@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'RobotoDraft';
+    font-style: normal;
+    font-weight: 100;
+    src: local("RobotoDraft Thin"), local("RobotoDraft-Thin"), url(https://fonts.gstatic.com/s/robotodraft/v2/hope9NW9iJ5hh8P5PM_EA2zZpt1Zv2lgqhgSPQ2HnUo.woff2) format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+body {
+    font-family: "RobotoDraft";
+    font-weight: 300;
+    background: white;
+    color: #FCFAF9;
+}
+
+nav, .portfolio, .center>.content, #contact>form {
+    width: 70%;
+    margin: 0 auto;
+}
+
+nav {
+    text-align: end;
+    padding: 60px 0;
+}
+
+#nav {
+    width: 265px;
+    float: right;
+    display: flex;
+}
+#menu{
+    display: none;
+}
+#title {
+    float: left;
+    padding: 0;
+}
+
+#title>a {
+    padding: 15px;
+    border: 2px solid #222;
+    text-transform: none;
+    font-weight: 600;
+}
+
+nav li {
+    display: inline-block;
+    padding-left: 40px;
+}
+
+nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #212121;
+    font-size: 19px;
+    font-family: "RobotoDraft";
+}
+
+.nav_scroll {
+    background-color: #8e2a4e;
+    padding: 20px 50px;
+    transition: padding .3s;
+}
+
+.content {
+    margin: 0 auto;
+}
+
+.center {
+    background: #F0F0EE;
+    height: 30vw;
+}
+
+.center>.content {
+    height: 100%;
+    border: none;
+    background-image: url('../img/img3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    text-shadow: 1px 1px 5px black;
+}
+
+.center>.content>h1 {
+    font-size: 5vw;
+    padding-top: 8vw;
+    font-weight: 300;
+}
+
+.center>.content>h2 {
+    font-size: 5vw;
+}
+
+.portfolio {
+    width: 72%;
+}
+
+.item {
+    position: relative;
+    margin: 1vw;
+}
+
+.item img {
+    width: 100%;
+}
+
+.infos {
+    text-align: center;
+    color: white;
+    font-size: 3vw;
+    text-shadow: 1px 1px 5px black;
+    background-color: rgba(240, 240, 238, 0.9);
+    height: 99%;
+    position: absolute;
+    z-index: 100;
+    bottom: 3px;
+    left: 0;
+    right: 0;
+    transition: all ease .5s;
+}
+
+.item:hover>.infos {
+    opacity: 0;
+}
+
+.item span {
+    display: block;
+}
+
+.item .info-title {
+    font-weight: 600;
+    margin-top: 15%;
+}
+
+.item .info-tiret {
+    font-size: 100px;
+    line-height: 30px;
+}
+
+#contact {
+    background: #222;
+}
+
+#contact h2 {
+    padding: 15px 0;
+    text-align: center;
+    font-size: 3vw;
+}
+
+#contact form {
+    width: 69%;
+    margin: auto;
+}
+#contact>form>.grid-contact>#inputs input{
+    width: 100%;
+    padding: 15px;
+    padding-right: 0;
+    margin-bottom: 10px;
+}
+#contact>form>.grid-contact>#inputs input:last-child{
+margin: 0;
+}
+#contact textarea{
+    width: 100%;
+    padding: 15px;
+    padding-right: 0;
+}
+#button {
+    text-align: center;
+}
+
+#button>div {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#button>button {
+    color: white;
+    border: none;
+    background-color: #f0f0ee;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15px 40px;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 5px black;
+    cursor: pointer;
+}
+
+#button>button:hover {
+    box-shadow: 1px 1px 5px black inset;
+}
+
+#button .alert {
+    color: white;
+        font-size: 20px;
+        background: #f2dede;
+        padding: 10px;
+        width: 310px;
+        margin: 0 auto;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 171vh;
+        border-radius: 6px;
+        box-shadow: 0 2px 5px black;
+}
+
+#button .alert button {
+    display: none;
+}*/
+
+footer {
+    background: #F0F0EE;
+}
+
+footer>div {
+    color: black;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    width: 79%;
+    margin: auto;
+}
+
+footer>div span, ul {
+    margin: auto 0;
+}
+
+footer>div ul:last-child {
+    margin-left: 70px;
+}
+
+.links>li>a {
+    text-decoration: none;
+    margin: auto;
+    color: black;
+    font-weight: 400;
+}
+
+ul>li a:hover {
+    font-weight: bold;
+}
+
+ul>li {
+    list-style: none;
+    display: inline-block;
+}
+
+ul.icons>li a {
+    display: block;
+    background-color: #222;
+    width: 40px;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 40px;
+    color: #fff;
+    transition: all .3s;
+}
+
+ul.icons>li a:hover {
+    background: #F0F0EE;
+    color: #222;
+}
+
+.blue {
+    background: blue;
+    width: 100%;
+    height: 10vh;
+}
+
+.yellow {
+    background: white;
+    width: 100%;
+    height: 10vh;
+}
+
+.red {
+    background: red;
+    width: 100%;
+    height: 10vh;
+}
+
+.green {
+    background: white;
+    width: 100%;
+    height: 10vh;
+}
